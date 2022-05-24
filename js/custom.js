@@ -130,7 +130,7 @@ $(function () {
       navText: ["<i class='ti-angle-left'></i>", "<i class='ti-angle-right'></i>"],
       dots: false,
       autoplay: true,
-      autoplayHoverPause: false,
+      autoplayHoverPause: true,
       smartSpeed: 800,
       autoplayTimeout: 3000,
       responsive: {
