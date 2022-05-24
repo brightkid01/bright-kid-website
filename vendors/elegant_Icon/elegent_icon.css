@@ -37,8 +37,7 @@ you can use the generic selector below, but it's slower:
 	text-transform: none;
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
-}
-.arrow_up:before {
+}.arrow_up:before {
 	content: "\21";
 }
 .arrow_down:before {
@@ -762,7 +761,7 @@ you can use the generic selector below, but it's slower:
 	content: "\e092";
 }
 .social_facebook:before {
-	content: "\e093";
+	content: url(facebook.png);background: none;height: 15px;margin-top:4px; vertical-align: middle; padding-bottom:0px;
 }
 .social_twitter:before {
 	content: "\e094";
@@ -783,7 +782,7 @@ you can use the generic selector below, but it's slower:
 	content: "\e099";
 }
 .social_instagram:before {
-	content: "\e09a";
+content: url(insta.png);background: none;height: 15px;margin-top:4px; vertical-align: middle; padding-bottom:0px;
 }
 .social_dribbble:before {
 	content: "\e09b";
@@ -809,8 +808,11 @@ you can use the generic selector below, but it's slower:
 .social_skype:before {
 	content: "\e0a2";
 }
+.social_whatsapp:before {
+	content: url(whatsapp.png);background: none;height: 15px;margin-top:4px; vertical-align: middle; padding-bottom:0px;
+}
 .social_youtube:before {
-	content: "\e0a3";
+	content: url(youtube.png);background: none;height: 15px;margin-top:4px; vertical-align: middle; padding-bottom:0px;
 }
 .social_picassa:before {
 	content: "\e0a4";
