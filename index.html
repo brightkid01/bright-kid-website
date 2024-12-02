@@ -413,6 +413,8 @@
         <a href="preschool-in-bangalore.html"
           ><img
             src="img/carousel/parent/desktop/BrightKidBannerDesktop.jpg"
+            loading="lazy"
+            fetchpriority="high"
             alt="Bright Kid Preschool in Bangalore"
         /></a>
       </div>
@@ -421,6 +423,7 @@
           ><img
             src="img/carousel/parent/desktop/montessori-preschool-franchise-banner.webp"
             loading="lazy"
+            fetchpriority="high"
             alt="Bright Kid Preschool Franchise"
         /></a>
       </div>
@@ -429,6 +432,7 @@
           ><img
             src="img/carousel/parent/desktop/montessori-preschool-learning-material-kit-banner.png"
             loading="lazy"
+            fetchpriority="high"
             alt="Educational Toys and Kits"
         /></a>
       </div>
@@ -437,6 +441,7 @@
           ><img
             src="img/carousel/parent/desktop/montessori-preschool-teachers-training-banner.png"
             loading="lazy"
+            fetchpriority="high"
             alt="Montessori Teachers Training"
         /></a>
       </div>
@@ -445,6 +450,7 @@
           ><img
             src="img/carousel/parent/desktop/BrightBooksBannerDesktop.png"
             loading="lazy"
+            fetchpriority="high"
             alt="Preschool Books, Nursery Books, and Kids Books"
         /></a>
       </div>
@@ -460,6 +466,8 @@
         ><img
           src="img/carousel/parent/mobile/BrightKidBannerMobile.jpg"
           alt="Bright Kid Preschool in Bangalore"
+          loading="lazy"
+          fetchpriority="high"
         />
       </div>
       <div class="item">
@@ -467,6 +475,7 @@
         ><img
           src="img/carousel/parent/mobile/BrightKidPreschoolFranchiseBannerMobile.png"
           loading="lazy"
+          fetchpriority="high"
           alt="Bright Kid Preschool Franchise"
         />
       </div>
@@ -475,6 +484,7 @@
         ><img
           src="img/carousel/parent/mobile/Parent_Banner_Brilla_Mobile.png"
           loading="lazy"
+          fetchpriority="high"
           alt="Educational Toys and Kits"
         />
       </div>
@@ -483,6 +493,7 @@
         ><img
           src="img/carousel/parent/mobile/Parent_Banner_BMTT_Mobile.png"
           loading="lazy"
+          fetchpriority="high"
           alt="Montessori Teachers Training"
         />
       </div>
@@ -491,6 +502,7 @@
         ><img
           src="img/carousel/parent/mobile/BrightBooksBannerMobile.png"
           loading="lazy"
+          fetchpriority="high"
           alt="Preschool Books, Nursery Books and Kids Books"
         />
       </div>
@@ -1015,8 +1027,9 @@
             >
               <form
                 method="POST"
-                action="https://1763470a.sibforms.com/serve/MUIEAEGmgw793fw-DkcKgldg-Y3j5h7dyYEWkJ7uCbbBnCKuCSKIgvbj1tOA-qu4pHxER_hsXo6o-s0m5UBDvzzwJc2E8aAZaio3MxCvLlmfTqqtyxQYFq09Gio6R8ZgC9bWe6uH0QNpHhpQ-NNxGNrfy9J3cPFfLSPbYn7562VzggjPnBKAMzFw9OiiOnc1ABjRFYLz0zvlJ4iq"
+                action="https://1763470a.sibforms.com/serve/MUIFABu2ag9orG-ou0W-qyR4ByG33RR3XGF7Xk_6b3eYSrpMRXN_3ZMb3z1Ig_UyHn2y23KgngYFkWP0HEbVtSHkLn-AXLnk9JF44P2qv__BbXe1_kwshj9CVL4jFL7WPTNJyvrxrhKnHGDJuVKmeOq9vWED8e2ateo5dofAHW24mxgTc1QWh-ilRWMGxHfO07ciDlzQo38fas2A"
                 data-type="subscription"
+                id="sib-form"
               >
                 <div class="row px-5 py-5">
                   <div class="col-lg-6">
@@ -1060,7 +1073,7 @@
                       />
                     </div>
                   </div>
-                  <div class="col-lg-6">
+                  <!-- <div class="col-lg-6">
                     <div class="form_single_item">
                       <input
                         type="text"
@@ -1069,6 +1082,41 @@
                         class="input"
                         id="MOBILE_NUMBER"
                         name="MOBILE_NUMBER"
+                        autocomplete="off"
+                        data-required="true"
+                        required
+                        placeholder="Mobile Number"
+                      />
+                    </div>
+                  </div> -->
+                  <div>
+                    <div class="form_single_item">
+                      <input
+                        maxlength="200"
+                        data-numeric="true"
+                        class="input"
+                        name="SMS__COUNTRY_CODE"
+                        autocomplete="off"
+                        data-required="true"
+                        data-country-code="IN"
+                        data-attributename="SMS"
+                        data-required="1"
+                        value="+91"
+                        required
+                        placeholder="Country Code"
+                        hidden
+                      />
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form_single_item">
+                      <input
+                        type="tel"
+                        maxlength="200"
+                        data-numeric="true"
+                        class="input"
+                        id="SMS"
+                        name="SMS"
                         autocomplete="off"
                         data-required="true"
                         required
