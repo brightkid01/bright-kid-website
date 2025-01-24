@@ -1,0 +1,19 @@
+﻿{"frames": {
+
+"CachedBmp_426":
+{
+	"frame": {"x":0,"y":0,"w":1890,"h":1244},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":1890,"h":1244},
+	"sourceSize": {"w":1890,"h":1244}
+}},
+"meta": {
+	"app": "Adobe Animate",
+	"version": "20.0.3.25487",
+	"image": "red3_atlas_1.png",
+	"format": "undefined",
+	"size": {"w":2048,"h":2048},
+	"scale": "1"
+}
+}
