@@ -7836,11 +7836,11 @@ a.elementor-button:hover {
       }
       }
       .blog-title p {
-        margin-top: 20px !important;
+        margin: 20px 0 20px 0 !important;
       }
       @media (max-width: 991px) {
         .blog-title p {
-          margin-top: 20px !important;
+          margin: 20px 0 20px 0 !important;
         }
         }
 /*# sourceMappingURL=style.css.map */
