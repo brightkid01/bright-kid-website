@@ -58,6 +58,39 @@
       type="font/woff2"
       crossorigin
     />
+    <style>
+      .mobileshow {
+        display: none;
+      }
+
+      .mobwhtsicon {
+        display: none;
+      }
+      @media screen and (max-width: 479px) {
+        .mobileshow {
+          display: block;
+        }
+
+        .bgmobwhtspp {
+          background-color: #2ab200;
+          color: white;
+          height: 40px;
+          width: 40px;
+          line-height: 40px;
+          font-weight: bold;
+          border-radius: 40px;
+          border-color: #46b8da;
+        }
+
+        .mobwhtsicon {
+          display: block;
+          position: fixed;
+          bottom: 15px;
+          left: 10px;
+          z-index: 99999;
+        }
+      }
+    </style>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -1951,39 +1984,7 @@
       </div>
     </footer>
     <!--mobile whatspp icon starts-->
-    <style>
-      .mobileshow {
-        display: none;
-      }
-
-      .mobwhtsicon {
-        display: none;
-      }
-      @media screen and (max-width: 479px) {
-        .mobileshow {
-          display: block;
-        }
-
-        .bgmobwhtspp {
-          background-color: #2ab200;
-          color: white;
-          height: 40px;
-          width: 40px;
-          line-height: 40px;
-          font-weight: bold;
-          border-radius: 40px;
-          border-color: #46b8da;
-        }
-
-        .mobwhtsicon {
-          display: block;
-          position: fixed;
-          bottom: 15px;
-          left: 10px;
-          z-index: 99999;
-        }
-      }
-    </style>
+    
     <div class="mobwhtsicon">
       <a
         href="https://wa.me/919342533377"
