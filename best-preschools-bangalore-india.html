@@ -1954,6 +1954,7 @@
 		</div>
 	</section>
 	<!-- Digital Resources at Home end -->
+   
 	<section class="contact_page contact_page_bg section_padding" id="contact_page">
 		<div class="container">
 			<div class="row ">
@@ -2482,7 +2483,7 @@
 		<div class="icon-bar1"> <a href="index.html#contact_page"><img src="img/enroll-today.png"></a> </div>
 	</div>
 	<style>
-    /* Container setup */
+    /* Container */
 .faqs-container {
 	background: #fff;
 	border-radius: 8px;
@@ -2490,10 +2491,9 @@
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Individual FAQ block */
+/* Each FAQ item */
 .faq-singular {
 	border-bottom: 1px solid #e0e0e0;
-	padding: 0;
 	transition: background 0.3s;
 }
 
@@ -2501,7 +2501,7 @@
 	border-bottom: none;
 }
 
-/* Question area */
+/* FAQ question */
 .faq-question {
 	display: flex;
 	justify-content: space-between;
@@ -2513,26 +2513,25 @@
 	color: #333;
 	font-family: "Nunito", sans-serif;
 	background: #f9f9f9;
-	transition: background 0.3s;
+	transition: background 0.3s ease;
 }
 
 .faq-singular:hover .faq-question {
 	background: #f1f1f1;
 }
 
-/* Arrow indicator */
+/* Arrow */
 .faq-toggle {
 	font-size: 20px;
 	color: #77bc4d;
 	transition: transform 0.3s ease;
 }
 
-/* Rotate icon when active */
 .faq-singular.active .faq-toggle {
 	transform: rotate(180deg);
 }
 
-/* Answer content */
+/* Answer */
 .faq-answer {
 	display: none;
 	padding: 0 30px 20px;
@@ -2543,11 +2542,14 @@
 	animation: fadeIn 0.3s ease-in-out;
 }
 
-.faq-answer p {
+.faq-answer p,
+.faq-answer li {
 	margin: 0;
+	color: #000;
+	font-family: "Nunito", sans-serif;
 }
 
-/* Optional: fade in animation */
+/* Fade animation */
 @keyframes fadeIn {
 	from {
 		opacity: 0;
@@ -2558,6 +2560,7 @@
 		transform: translateY(0);
 	}
 }
+
 
 	.mobileshow {
 		display: none;
@@ -2619,20 +2622,21 @@
 	<!-- custom js -->
 	<script src="js/custom.js"></script>
 	<script type="text/javascript" src="https://apiv2.popupsmart.com/api/Bundle/375292" async></script>
-  <script>
+<script>
 $(document).ready(function () {
   $('.faq-question').on('click', function () {
     const $faqItem = $(this).closest('.faq-singular');
 
-    // Toggle current item
+    // Toggle current answer
     $faqItem.toggleClass('active');
     $faqItem.find('.faq-answer').slideToggle(200);
 
-    // Close others (optional)
+    // Close all other answers
     $('.faq-singular').not($faqItem).removeClass('active').find('.faq-answer').slideUp(200);
   });
 });
 </script>
+
 
 
 </body>
