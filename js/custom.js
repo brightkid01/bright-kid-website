@@ -426,23 +426,4 @@ $(".counter").counterUp({
   delay: 10,
   time: 1000,
 });
-	$(document).ready(function() {
-		$(".faqs-container .faq-singular:first-child").addClass("active").children(".faq-answer").slideDown();
-		$(".faq-singular:first-child .faq-toggle").text("▲"); // Set first item to open
-		$(".faq-question").on("click", function() {
-			let faqItem = $(this).parent();
-			let toggleIcon = $(this).find(".faq-toggle");
-			if(faqItem.hasClass("active")) {
-				faqItem.removeClass("active");
-				faqItem.find(".faq-answer").slideUp();
-				toggleIcon.text("▼");
-			} else {
-				$(".faq-singular").removeClass("active");
-				$(".faq-answer").slideUp();
-				$(".faq-toggle").text("▼");
-				faqItem.addClass("active");
-				faqItem.find(".faq-answer").slideDown();
-				toggleIcon.text("▲");
-			}
-		});
-	});
+
